@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed:book": "node ./seeds/book.seed.js",
-    "start": "node --watch index.js",
+    "start": "node index.js",
+    "start:dev": "node --watch index.js",
     "lint": "eslint",
     "prepare": "husky install"
   },
