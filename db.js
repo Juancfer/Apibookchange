@@ -1,12 +1,14 @@
 require("dotenv").config();
 const DB_CONNECTION = process.env.DB_URL;
+const DB_NAME = process.env.DB_NAME;
+
 const mongoose = require("mongoose");
 
 const config = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 5000,
-  dbName: "api-book"
+  dbName: DB_NAME
 };
 
 const connect = async () => {
